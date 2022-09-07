@@ -13,13 +13,21 @@ function timeStamp() {
     var minutes = time.substring(time.search(":")+1, time.lastIndexOf(":") ); //display from after first : to before last :
     var dayLight = time.substring(time.search("M")-2, time.search("M")+1 ); //display two spaces before M & include M
 
-    //posts time inside html page
-    var first = document.getElementById("first");
+    // posts time inside html page
+    const first = document.getElementById("first");
     first.innerHTML = weekDay +", "+ month +" "+ day +", "+ year +". "+ hours;
 
     var second = document.getElementById("second");
     second.innerHTML = minutes + dayLight;
 
+    var displayHours = document.getElementById("hours");
+    displayHours.innerHTML = hours;
+
+    var displayWeekDay = document.getElementById("weekDay");
+    displayWeekDay.innerHTML = weekDay;
+
+    var displayDate = document.getElementById("date");
+    displayDate.innerHTML = month +" "+ day +", "+ year ;
 }
 
 //creates a blinking effect for the colon

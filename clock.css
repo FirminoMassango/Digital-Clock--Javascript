@@ -1,5 +1,5 @@
 /* CSS comment */
-
+/* 
 html, body {
     background-color: black;
     height:100%;
@@ -53,4 +53,20 @@ html, body {
 
 .hide {
     visibility:hidden;
+} */
+
+.box {
+    width: 150px;
+    height: 150px;
+    background-color: #c4c4c4;
+    border-radius: 10px;
+    color: black;
 }
+
+#weekDay {
+    color: blue;
+}
+
+/* #first {
+    color: blue;
+} */
